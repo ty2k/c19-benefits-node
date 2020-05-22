@@ -1,8 +1,17 @@
+footer>div {
+  background-color: $color-blue-dark;
+  border-top: 2px solid $color-yellow;
+}
+
 .footer-links {
+  a {
+    color: $color-white;
+  }
+
   @include md {
     li {
       border-right: 1px solid $color-grey-dark;
-      padding: 0 $space-sm;
+      // padding: 0 $space-sm;
 
       // &::before {
       //   content: '\2022';
