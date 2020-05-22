@@ -99,13 +99,14 @@ app.use(compression())
 app.locals.GITHUB_SHA = process.env.GITHUB_SHA || null
 app.locals.TAG_VERSION = process.env.TAG_VERSION || null
 app.locals.LAST_UPDATED = process.env.LAST_UPDATED || null
+app.locals.NOINDEX = process.env.NOINDEX || false
 app.locals.hasData = hasData
 
 /**
  * Create an asset path helper for templates
- * If a CDN_PREFIX is set in env, the helper 
+ * If a CDN_PREFIX is set in env, the helper
  * will return the path with the CDN prefix,
- * otherwise it just returns the path with 
+ * otherwise it just returns the path with
  * current protocol and host prefix
  */
 app.use((req, res, next) => {

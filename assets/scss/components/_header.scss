@@ -1,4 +1,6 @@
 header {
+  background-color: $color-blue-dark;
+  border-bottom: 2px solid $color-yellow;
   padding: 0 0 0 0;
   margin-bottom: $space-xl;
 
@@ -22,6 +24,10 @@ header {
     margin-bottom: $space-sm;
     font-size: .85em;
 
+    a {
+      color: $color-white;
+    }
+
     h2 {
       @include visuallyHidden();
     }
@@ -34,7 +40,7 @@ header {
 
     button {
       background: none;
-      color: $color-blue-dark;
+      color: $color-white;
       text-decoration: underline;
       border: 0;
 
@@ -56,7 +62,7 @@ header {
     }
   }
 
-  .canada-flag {
+  .bc-logo {
     height: auto;
     max-height: 40px;
     width: 272px;
