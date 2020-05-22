@@ -27,7 +27,7 @@ test('Can send get request to start route and have js src set', async () => {
   const route = app.routes.get('start')
   const response = await request(app).get(route.path.en)
   expect(response.statusCode).toBe(200)
-  expect(response.text).toContain('digital.canada.ca')
+  expect(response.text).toContain('British Columbia')
 })
 
 test('Can send get request to start route and have empty js src', async () => {
@@ -37,5 +37,5 @@ test('Can send get request to start route and have empty js src', async () => {
   // call to getClientJs should return false
   // which means we should have X number of script tags
   // i.e. whatever the amount is in the base view
-  expect(countScriptTags(response)).toBe(2)
+  expect(countScriptTags(response)).toBe(1)
 })
