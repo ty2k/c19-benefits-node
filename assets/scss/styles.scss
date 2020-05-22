@@ -1,6 +1,7 @@
 /* Utilities */
 @import './_variables';
 @import './_mixins';
+@import './functions';
 
 /* App-wide styles */
 @import './_base';
@@ -10,6 +11,7 @@
 @import './components/_buttons';
 @import './components/_details';
 @import './components/_error-list';
+@import './components/_font';
 @import './components/_footer';
 @import './components/_header';
 @import './components/_multiple-choice';

@@ -38,6 +38,7 @@
     }
   },
   "dependencies": {
+    "@bcgov/bc-sans": "^1.0.1",
     "@csstools/postcss-sass": "^4.0.0",
     "airtable": "^0.8.1",
     "applicationinsights": "^1.7.5",

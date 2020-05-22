@@ -1,19 +1,20 @@
 // colours (using 'color' because of CSS conventions)
 
-$color-blue-dark: #284162;
-$color-blue-light: #335075;
+$color-blue-dark: #003366;
+$color-blue-light: #1a5a96;
+$color-blue-focus: #3b99fc;
 $color-banner-blue: #4B98B2;
 $color-banner-blue-light: #DFF8FD;
-$color-yellow: #C78100;
+$color-yellow: #fcba19;
 $color-white: #ffffff;
 $color-black: #000000;
-$color-red: #af3c43;
+$color-red: #d8292f;
 $color-red-light: #f3e9e8;
 $color-purple: #7834bc;
 $color-grey-light: #cbcbcb;
 $color-grey-medium: #909090;
 $color-grey-dark: #666666;
-$color-green: #138A00;
+$color-green: #2e8540;
 $color-green-dark: #0B4E00;
 
 // spacing units
@@ -29,3 +30,4 @@ $space-xxl: 60px;
 // other vars
 $height-footer: 80px;
 $multiple-choice-padding-left: 40px;
+$outline-offset: 1px;

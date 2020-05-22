@@ -17,9 +17,10 @@
 
         {% include "_includes/adobe.njk" %}
 
+        {% if NOINDEX %}<meta name="robots" content="noindex">{% endif %}
         {% if GITHUB_SHA %}<meta name="github-sha" content="{{ GITHUB_SHA }}">{% endif %}
         {% if TAG_VERSION %}<meta name="version" content="{{ TAG_VERSION }}">{% endif %}
-        <link rel="shortcut icon" href="{{ asset('/favicon.png') }}" type="image/x-icon" sizes="32x32">
+        <link rel="shortcut icon" href="{{ asset('/favicon.ico?v=1') }}" type="image/x-icon" sizes="48x48">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400,700&amp;display=fallback" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/dist/css/styles.css') }}">
@@ -28,15 +29,15 @@
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTM7CPP"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {# <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTM7CPP"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> #}
         <!-- End Google Tag Manager (noscript) -->
         <nav>
             <div id="skip-link-container"><a href="#content" id="skip-link">{{ __('Skip to main content') }}</a></div>
         </nav>
 
         <div class="outer-container">
-            <header class="border-b-3 border-blue-900 pb-5 mb-10">
+            <header class="border-b-3 pb-5 mb-10">
                 {% include "_includes/phaseBanner.njk" %}
                 {% include "_includes/fip.njk" %}
             </header>
